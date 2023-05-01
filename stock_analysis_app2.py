@@ -28,7 +28,7 @@ st.title("股票分析工具")
 uploaded_file = st.file_uploader("選擇一個 .xlsx 文件", type="xlsx")
 current_year = st.number_input("請輸入當前年份：", min_value=1900, max_value=9999, value=2023, step=1)
 
-filtered_data = pd.DataFrame()
+
 if uploaded_file is not None:
     data = analyze_data(uploaded_file, current_year)
 
